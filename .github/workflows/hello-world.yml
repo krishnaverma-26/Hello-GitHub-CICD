@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Set Up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -37,7 +37,7 @@ jobs:
           zip ../hello-world.zip app.py test_app.py
 
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: hello-world-package
           path: hello-world.zip
