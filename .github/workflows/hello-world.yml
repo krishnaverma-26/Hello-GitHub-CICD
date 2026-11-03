@@ -23,6 +23,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Validate Python syntax
+        run: python -m py_compile app.py test_app.py
+
       - name: Run Hello World Application
         run: python app.py
 
