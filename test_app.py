@@ -2,7 +2,7 @@ import unittest
 from app import hello_world, welcome_message
 
 class TestHelloWorld(unittest.TestCase):
-    
+
     def test_hello_world_message(self):
         self.assertEqual(hello_world(), "Hello, DevOps!")
 
@@ -20,6 +20,6 @@ class TestHelloWorld(unittest.TestCase):
             welcome_message("Rahul"),
             "Welcome to DevOps, Rahul!"
         )
-        
+
 if __name__ == "__main__":
     unittest.main()
